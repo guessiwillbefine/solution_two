@@ -17,7 +17,7 @@ public class Violation {
     @JsonProperty("type")
     private String type;
     @JsonProperty("fine_amount")
-    private int fineAmount;
+    private double fineAmount;
 
     public Date getLocalDateTime() {
         return localDateTime;
@@ -51,13 +51,14 @@ public class Violation {
         this.type = type;
     }
 
-    public int getFineAmount() {
+    public double getFineAmount() {
         return fineAmount;
     }
 
-    public void setFineAmount(int fineAmount) {
+    public void setFineAmount(double fineAmount) {
         this.fineAmount = fineAmount;
     }
+
 
     @Override
     public String toString() {

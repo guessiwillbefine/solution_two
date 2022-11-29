@@ -5,7 +5,6 @@ import java.nio.file.Path;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-//todo трабл в том что в одном случае атрибут идет со тегом в другом - без
 public class FirstAssignment {
     static final String ROOT_PATH = "src/main/resources/firstAssignmentResources";
     static final String FORMAT = ".xml";

@@ -6,9 +6,9 @@ public class ViolationDTO {
     @JsonProperty("type")
     private String type;
     @JsonProperty("amount")
-    private long amount;
+    private double amount;
 
-    public ViolationDTO(String type, long amount) {
+    public ViolationDTO(String type, double amount) {
         this.type = type;
         this.amount = amount;
     }
