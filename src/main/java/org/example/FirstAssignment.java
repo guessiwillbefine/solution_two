@@ -6,11 +6,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class FirstAssignment {
-    static final String ROOT_PATH = "src/main/resources/firstAssignmentResources";
+    static final String ROOT_PATH = "src/main/resources/firstAssignmentResources/";
     static final String FORMAT = ".xml";
     private static final String NAME_SWAP = "name=\"%s %s\"";
     private static final Pattern PATTERN_LINE = Pattern.compile("<.+>");
-    private static final Pattern PATTERN_NAME = Pattern.compile("(name=)(\"([А-Яа-яІЇії]+)\")");
+    private static final Pattern PATTERN_NAME = Pattern.compile("(name\s*=\s*)(\"([А-Яа-яІЇії]+)\")");
     private static final Pattern PATTERN_SURNAME = Pattern.compile("( surname=)(\"([А-Яа-яІЇії]+)\")");
 
     private static void rewriteXML(File file) {
